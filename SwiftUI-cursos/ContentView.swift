@@ -3,8 +3,12 @@ import Playgrounds
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hola bienvenido")
+                .font(.largeTitle)
+                .foregroundColor(Color.blue)
+                .padding()
+        }
     }
 }
 
@@ -12,6 +16,3 @@ struct ContentView: View {
     ContentView()
 }
 
-#Playground {
-    _ = 1 + 2
-}
