@@ -9,7 +9,17 @@ import SwiftUI
 
 struct ImageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Image("hogarpata").resizable()
+                .padding(50)
+                .frame(width: 300, height: 300)
+                .background(Color.black)
+                .clipShape(Circle())
+                .shadow(color: Color.orange, radius: 5)
+                
+            Image(systemName: "person.fill.badge.minus")
+                
+        }
     }
 }
 
